@@ -95,7 +95,6 @@ body {
 .contacts-wrap {
  display: flex;
  align-items: center;
- 
 }
 .header-list-contact {
   margin-right: auto;
@@ -134,14 +133,10 @@ body {
 .header-contact {
  color: var(--tetriary-text-color);
 }
-.header-contact::before {
-  display: inline-flex;
-  content: "";
-  
-}
+
 .header-list-contact .svg {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 .svg:hover {
   fill: #2196F3;
@@ -151,11 +146,11 @@ body {
 
 .pledge {
  text-align: center;
- background-color: var(--secondary-background-color);
  margin: 0 auto;
  padding: 200px 0;
  max-width: 1600px;
  height: 600px;
+ background-color: #c4c4c4;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/pledge.jpg);
 }
 .pledge-title  {
@@ -326,13 +321,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.icon-social::after {
-  display: inline-flex;
-  content: "";
-  justify-content: center;
-  background: currentColor;
-  position: absolute;
-}
+
+  
 .icon-link {
   align-items: center;
   justify-content: center;
@@ -423,6 +413,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
@@ -460,12 +451,12 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   
 }
 
 .footer-icon {
-  align-items: baseline;
-  padding-top: 12px;
+  
   margin-left: 70px;
 }
   /*Портфоліо*/
@@ -501,11 +492,13 @@ body {
 .header-btn:hover,
 .header-btn:focus{
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
-  rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);;
+  rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.work-portfolio:hover,
-.work-portfolio:focus{
-  box-shadow: 0px 2px rgba(0 , 0, 0, 0.12), 0px 1px rgba(0 , 0, 0, 0.08), 0px 3px rgba(0 , 0, 0, 0.01);
+.work:hover,
+.work:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px
+  rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .work-list {
   display: flex;
@@ -539,6 +532,7 @@ body {
 
 .work {
  text-decoration: none;
+ display: block;
   }
 
 .portfolio-photo {

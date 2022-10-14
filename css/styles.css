@@ -131,6 +131,8 @@ body {
   cursor: pointer;
 }
 .header-contact {
+  display: flex;
+  align-items: center;
  color: var(--tetriary-text-color);
 }
 
@@ -149,7 +151,7 @@ body {
  margin: 0 auto;
  padding: 200px 0;
  max-width: 1600px;
- height: 600px;
+ background-size: cover;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/pledge.jpg);
  background-color: #c4c4c4;
 }
@@ -361,15 +363,15 @@ body {
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  fill: #AFB1B8;
+  color: #AFB1B8;
+}
+.svg {
+  fill: currentColor;
 }
 .client:hover,
 .client:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
-.client:hover>svg {
-  fill: var(--accent-color);
 }
 
 /*Footer*/

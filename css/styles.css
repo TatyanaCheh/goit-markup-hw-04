@@ -259,7 +259,8 @@ body {
  padding-bottom: 94px;
 }
 .gallery,
-.hero-title {
+.hero-title,
+.title-clients {
  margin-bottom: 50px;
 
  font-weight: 700;
@@ -352,6 +353,35 @@ body {
   background-color: var(--accent-color);
   fill: var(--primary-background-color);
 }
+
+/* Клиенты */
+
+.our-clients {
+  display: flex;
+  gap: 30px;
+}
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+.client:hover,
+.client:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.client:hover>svg {
+  fill: var(--accent-color);
+}
+
 /*Footer*/
 .footer {
   padding-top: 60px;
@@ -386,6 +416,58 @@ body {
   margin-bottom: 20px;
   display: block;
 }
+
+.footer-link {
+  display: flex;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  
+}
+.footer-net {
+  
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-background-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-net:hover,
+.footer-net:focus {
+  background: var(--accent-color);
+  fill: var(--primary-background-color);
+}
+.svg-footer {
+  fill: currentColor;
+  fill: var(--primary-background-color);
+}
+.footer-net {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-svg {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-container {
+  display: flex;
+  
+}
+
+.footer-icon {
+  align-items: baseline;
+  padding-top: 12px;
+  margin-left: 70px;
+}
   /*Портфоліо*/
   
 .container-padding {
@@ -415,6 +497,15 @@ body {
 .nav-btn:focus{
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+}
+.header-btn:hover,
+.header-btn:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
+  rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);;
+}
+.work-portfolio:hover,
+.work-portfolio:focus{
+  box-shadow: 0px 2px rgba(0 , 0, 0, 0.12), 0px 1px rgba(0 , 0, 0, 0.08), 0px 3px rgba(0 , 0, 0, 0.01);
 }
 .work-list {
   display: flex;
